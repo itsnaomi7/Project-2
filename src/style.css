@@ -14,33 +14,7 @@ body {
 	margin: 0;
 }
 
-
-.results {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.result {
-	border: double;
-  border-color: #99da8f;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 10px;
-	height: 400px;
-	width: 300px;
-}
-
-
-
-.buttons {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-button {
+#new-quote-new {
 	background-color: #99da8f;
 	border: 0;
 	border-radius: 4px;
@@ -48,10 +22,129 @@ button {
 	font-size: 18px;
 	padding: 10px;
 	margin: 10px;
-	width: 300px;
+	width: 200px;
 }
 
 button:active {
 	transform: scale(1.10);
 }
 
+.container {
+	border: double;
+  	border-color: #99da8f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 7px;
+	height: 400px;
+	width: 750px;
+	padding: 15px;
+	margin-bottom:100px;
+}
+
+/* new quote style */
+
+
+#new-quote-form {
+	display: flex;
+  }
+  
+  input,
+  button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+  }
+  
+  #new-quote-input {
+	flex: 1 1 0%;
+	background-color: #48324b;
+	padding: 2rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+  }
+  
+  #new-quote-input::placeholder {
+	color: green;
+  }
+  
+  #new-quote-submit {
+	color: rgb(119, 73, 80);
+	font-size: 1.25rem;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.4s;
+	
+  }
+  
+  #new-quote-submit:hover {
+	opacity: 0.8;
+  }
+  
+  #new-quote-submit:active {
+	opacity: 0.6;
+  }
+
+  .new {
+	color: gray;
+	margin-top: 25px;
+  }
+  
+  main {
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding: 2rem 1rem;
+	color: gray;
+	margin-bottom: 2px;
+  }
+
+  #quotes .quote {
+	position: absolute;
+  	bottom: 10px;
+	justify-content: space-between;
+	background-color: #24727f;
+	padding: 1rem;
+	border-radius: 3rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+  }
+  
+  .quote-list {
+	padding: 0;
+	
+  }
+  
+  .quote-list h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	color: gray;
+	margin-bottom: 4px;
+  }
+  
+  
+  #quotes .quote .content {
+	flex: 1 1 0%;
+  }
+
+  #quotes .quote .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+	margin-bottom: 4px;
+  }
+  
+  .quote .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	text-transform: uppercase;
+  }
+  
+  .quote .actions button:hover {
+	opacity: 0.8;
+  }
+  
+  .quote .actions button:active {
+	opacity: 0.6;
+  }
