@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+#  <s>Mood Music</s>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
